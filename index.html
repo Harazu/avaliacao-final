@@ -6,6 +6,104 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Comandos Básicos do Git</h1>
+  
+  <h2>Configuração Inicial</h2>
+  <p>Configura o nome do usuário e o gmail para as suas contribuições:</p>
+  <pre>
+    <code>
+$ git config --global user.name "Seu Nome"
+$ git config --global user.email "seu-email@example.com"
+    </code>
+  </pre>
+  <h2>Criação e Clonagem de Repositórios</h2>
+  <p>Inicializa um novo repositório Git:</p>
+  <pre>
+    <code>
+$ git init
+    </code>
+  </pre>
+  <p>Clona um repositório existente para o seu computador:</p>
+  <pre>
+    <code>
+$ git clone URL_do_repositório
+    </code>
+  </pre>
+  
+  <h2>Trabalhando com Alterações</h2>
+  <p>Verifica o status atual do seu repositório:</p>
+  <pre>
+    <code>
+$ git status
+    </code>
+  </pre>
+  <p>Adiciona um arquivo para ser incluído no próximo commit:</p>
+  <pre>
+    <code>
+$ git add nome_do_arquivo
+    </code>
+  </pre>
+  <p>Realiza um commit com as alterações adicionadas:</p>
+  <pre>
+    <code>
+$ git commit -m "Mensagem do commit"
+    </code>
+  </pre>
+  
+  <h2>Visualização do Histórico</h2>
+  <p>Veja o histórico completo dos commits no repositório:</p>
+  <pre>
+    <code>
+$ git log
+    </code>
+  </pre>
+  <p>Veja uma versão resumida do histórico dos commits:</p>
+  <pre>
+    <code>
+$ git log --oneline
+    </code>
+  </pre>
+  
+  <h2>Ramificações (Branches)</h2>
+  <p>Lista todas as ramificações no repositório:</p>
+  <pre>
+    <code>
+$ git branch
+    </code>
+  </pre>
+  <p>Cria uma nova ramificação:</p>
+  <pre>
+    <code>
+$ git branch nome_da_branch
+    </code>
+  </pre>
+  <p>Altera para uma ramificação existente:</p>
+  <pre>
+    <code>
+$ git checkout nome_da_branch
+    </code>
+  </pre>
+  
+  <h2>Sincronizando com Repositório Remoto</h2>
+  <p>Adiciona um repositório remoto ao seu repositório local:</p>
+  <pre>
+    <code>
+$ git remote add origin URL_do_repositório
+    </code>
+  </pre>
+  <p>Envia as alterações locais para o repositório remoto:</p>
+  <pre>
+    <code>
+$ git push -u origin nome_da_branch
+    </code>
+  </pre>
+  
+  <h2>Atualização do Repositório Local</h2>
+  <p>Atualiza seu repositório local com as alterações mais recentes do repositório remoto:</p>
+  <pre>
+    <code>
+$ git pull origin nome_da_branch
+    </code>
+  </pre>
 </body>
 </html>
